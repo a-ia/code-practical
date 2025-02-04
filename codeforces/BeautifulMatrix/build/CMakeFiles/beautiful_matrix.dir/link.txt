@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/beautiful_matrix.dir/link.d CMakeFiles/beautiful_matrix.dir/src/main.cpp.o -o beautiful_matrix

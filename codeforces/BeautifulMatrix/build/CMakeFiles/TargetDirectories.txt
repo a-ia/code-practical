@@ -1,0 +1,3 @@
+/home/angel/codeforces/BeautifulMatrix/build/CMakeFiles/beautiful_matrix.dir
+/home/angel/codeforces/BeautifulMatrix/build/CMakeFiles/edit_cache.dir
+/home/angel/codeforces/BeautifulMatrix/build/CMakeFiles/rebuild_cache.dir
