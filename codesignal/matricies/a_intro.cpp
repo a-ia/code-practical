@@ -65,10 +65,10 @@ std::vector<int> reverse_traverse(const std::vector<std::vector<int>>& matrix) {
 
     std::vector<int> output;
 
-    //Start the loop for row from rows - 1 being the end of the index and run it to index 0, decrementing it at each step
+    // Start the loop for row from rows - 1 being the end of the index and run it to index 0, decrementing it at each step
     for (int row = rows - 1; row >= 0; --row) {
 
-    //Similarly, our nested loop for col starts from cols - 1 and goes to 0. 
+    // Similarly, our nested loop for col starts from cols - 1 and goes to 0. 
     // This allows us to start from the bottom-right corner and traverse leftward by row, 
     // then upward a column, covering the entire matrix in reverse order.
         for (int col = cols - 1; col >= 0; --col) {
@@ -85,7 +85,7 @@ void alt_matrix_traversal(const std::vector<std::vector<int>>& matrix) {
     int rows = matrix.size();
     int cols = matrix[0].size();
     for (int col = cols - 1; col >= 0; --col) {
-        if (col % 2 == 0) { // col % 2 ==! 0 to reverse pattern
+        if (col % 2 == 0) { // col % 2 != 0 to reverse pattern
             for (int row = rows - 1; row >= 0; --row) {
                 std::cout << matrix[row][col] << " ";
             }
