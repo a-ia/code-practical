@@ -27,6 +27,16 @@ int main() {
     std::cout << myNumbers[i] << "\n";
   }
 
+  std::cout << std::endl;
+  
+  // Create a vector called cars that will store strings
+  std::vector<std::string> raceCars = {"Volvo", "BMW", "Ford", "Mazda"};
+  for (std::string raceCar : raceCars) {
+    std::cout << raceCar << "\n";
+  }
+
+  std::cout << std::endl;
+
   return 0;
 }
 
