@@ -1,7 +1,7 @@
-#include <ostream>
 #include <vector>
 #include <iostream>
 #include <string>
+#include <map>
 
 int main() {
   
@@ -47,10 +47,43 @@ int main() {
   }
 
   std::cout << std::endl << "Get the first element with .front: " << raceCars.front() << std::flush;
-
   std::cout << std::endl << "Get the last element with .back: " << raceCars.back() << std::flush;
-
   std::cout << std::endl << "Access an element with .at() function: " << raceCars.at(2) << std::flush;
+
+  std::cout << std::endl; 
+  // Create a map called people that will store strings as keys and integers as values
+  // Create a map that will store the name and age of different people
+  std::map<std::string, int> people = { {"John", 32}, {"Adele", 45}, {"Bo", 29} }; 
+
+  // Accessing is different compared to other containers
+  std::cout << "John is: " << people["John"] << std::endl; // Access key "John" in people and get the value (age)
+ 
+  // you can also access with .at() fuction instead of map["Value"]
+  // Get the value associated with the key "Adele"
+  std::cout << "Adele is: " << people.at("Adele") << std::endl; 
+
+  std::cout << std::endl; 
+  std::cout << "Change values of the associated key" << std::endl;
+  // Change John's value to 50 instead of 32
+  people["John"] = 50;
+  //or
+  // people.at("John") = 50;
+  std::cout << "John is: " << people["John"];
+  // to add, you can use square brackets but .insert() function is pretty good too
+  people.insert({"Anya", 24});
+
+  // Popular vector functions like empty() earase() clear() can be used for maps similarily
+  // LOOPING MAPS
+  // Use auto keyword which helps determine data type for key-value pairs
+  // you have to inlude .first to access keys and .second for values in th eloop
+  
+  std::cout << std:: endl << std::endl;
+
+  for (auto person : people) {
+    std::cout << person.first << " is: " << person.second << std::endl;
+  }
+
+  // You can loop through MAP with an iterator as well.
 
   return 0;
 }
