@@ -27,18 +27,43 @@ int main() {
     std::cout << myNumbers[i] << "\n";
   }
 
-  std::cout << std::flush;
+  std::cout << std::endl << std::flush;
 
-  // Declaring 2D array
+  std::cout << "Declaring 2D array (int arr2d[4][4])" << std::endl;
   int arr2d[4][4];
 
-  // Initialize 2D array using loop
+  std::cout << "Initialize 2D array using loop" << std::endl;
   for (int i = 0; i < 4; i++) {
       for (int j = 0; j < 4; j++) {
           arr2d[i][j] = i + j;
       }
   }
 
+  // Print arr2s
+  std::cout << "Contents of arr2d (4x4):" << std::endl;
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            std::cout << arr2d[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
+  
+  std::cout << "Initialize 2D statically" << std::endl;
+  int array2d[3][3] = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+  };
+
+  std::cout << "Contents of array2d (3x3):" << std::endl;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            std::cout << array2d[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
+
+  
   std::cout << std::endl;
   //Create a vector called cars that will store strings
   std::vector<std::string> raceCars = {"Chevy Impala", "Mercedes-AMG GT 63", "Lamborghini Revuelto", "McLaren Artura Spider"};
