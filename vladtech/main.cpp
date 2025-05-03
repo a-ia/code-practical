@@ -75,6 +75,13 @@ int main() {
   std::cout << std::endl << "Get the last element with .back: " << raceCars.back() << std::flush;
   std::cout << std::endl << "Access an element with .at() function: " << raceCars.at(2) << std::flush;
 
+  raceCars.push_back("Tesla");
+  std::cout << std::endl << "Last element after adding Tesla: " << raceCars.back();
+ 
+  raceCars.pop_back();
+  std::cout << std::endl << "Last element after removing Tesla: " << raceCars.back() << std::flush;
+
+
   std::cout << std::endl; 
   // Create a map called people that will store strings as keys and integers as values
   // Create a map that will store the name and age of different people
