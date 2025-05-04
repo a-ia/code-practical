@@ -10,8 +10,9 @@ int main() {
     };
 
     // TODO: Add a new floor with apartments to our 'apartment building' 
-    apartments.push_back({"Apt 301", "Apt 302"});
-    
+    // apartments.push_back({"Apt 301", "Apt 302"});
+    apartments.pop_back();  
+
     // and then make a walk visiting each apartment on every floor.
     for (const auto& floor : apartments) { // Iterates over each "floor" (vector of strings)
         for (const auto unit : floor) { // Iterates over each "unit" (string) in the floor

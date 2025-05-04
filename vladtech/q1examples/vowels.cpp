@@ -12,6 +12,7 @@ int countVowels(const std::string& str) {
     return count;
 }
 
+// Test case
 int main() {
     std::string input = "Hello World";
     int result = countVowels(input);

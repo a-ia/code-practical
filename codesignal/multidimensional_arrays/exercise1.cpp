@@ -10,7 +10,7 @@ int main() {
     };
 
     // TODO: Complete the code to print the apartment codes of the ground floor only.
-    apartmentBuilding[1][1] = "Renovated Apt 202";
+    building[1][1] = "Renovated Apt 202";
     
     for (const auto& unit : building[0]) {
         std::cout << unit << ", ";
